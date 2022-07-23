@@ -14,5 +14,5 @@
 #   Test Package:              'Ctrl + Shift + T'
 
 labelremap <- function(cluster) {
-  print("Hello, world! 69")
+  print("Hello, world! Github")
 }
