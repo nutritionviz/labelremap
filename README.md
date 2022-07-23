@@ -6,6 +6,7 @@ R package to 'best' remap cluster labels to ground truth by assessing accuracy o
 ```R
 library(devtools)
 install_github("nutritionviz/labelremap")
+library("labelremap")
 ```
 
 ## Usage
