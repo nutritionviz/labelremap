@@ -22,8 +22,9 @@ labelremap <- function(cluster, truth) {
     cluster_temp <- as.factor(cluster_temp)
     cfm <- confusionMatrix(cluster_temp, truth)
 
-    if (cfm$overall[['Accuracy']] > max_acc) {
+    if (cfm$overall[['Accuracy']][] > max_acc) {
       best_labels <- cluster_temp
+      max_acc <- cfm$overall[['Accuracy']][]
     }
   }
 
