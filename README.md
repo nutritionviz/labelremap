@@ -15,8 +15,8 @@ labels <- labelremap(clustering_labels, true_labels)
 ```
 
 Returns the remapped clustering_labels. You could then pass to the caret package's confusionMatrix function to assess clustering performance, e.g.:
-```R 
-library(caret)
+```R
+library("caret"")
 confusionMatrix(labels, true_labels)
 ```
 
