@@ -2,6 +2,9 @@ library(caret)
 library(combinat)
 
 labelremap <- function(cluster, truth) {
+  cluster <- as.factor(cluster)
+  truth <- as.factor(truth)
+
   # input validation
   if (length(cluster)!= length(truth)) {
     stop(paste(
